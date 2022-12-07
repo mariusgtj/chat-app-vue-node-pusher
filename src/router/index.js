@@ -1,22 +1,33 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
+import LoginView from '../views/LoginView.vue'
+import ChatDashboard from '../views/ChatDashboard.vue'
+import PusherExampleView from '../views/PusherExampleView.vue'
+import PusherLoginView from '../views/PusherLoginView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'login',
+    component: LoginView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/dashboard',
+    name: 'dashboard',
+    component: ChatDashboard
+  },
+  {
+    path: '/pusher-example',
+    name: 'pusher-example',
+    component: PusherExampleView
+  },
+  {
+    path: '/pusher-login',
+    name: 'pusher-login',
+    component: PusherLoginView
   }
 ]
 

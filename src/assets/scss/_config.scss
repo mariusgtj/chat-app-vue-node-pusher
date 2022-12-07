@@ -1,0 +1,31 @@
+$font-stack: Arial, Helvetica, sans-serif;
+
+$primary: #7FBD32;
+$primaryLight: #CBE432;
+$primaryDark: #448D76;
+
+$secondary: #F3F7D4;
+$secondaryLight: #F8FCD9;
+$secondaryDark: #093426;
+
+*, 
+*::before, 
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: $font-stack;
+ line-height: 1.2;
+}
+
+a {
+ text-decoration: none;
+ color: $secondaryDark;
+}
+
+.clearfix {
+  overflow: auto;
+}

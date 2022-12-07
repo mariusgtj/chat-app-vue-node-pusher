@@ -1,0 +1,46 @@
+
+1. What is HTTP
+A:
+- HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol;
+- The messages sent by the client, usually a Web browser, are called requests and the messages sent by the server as an answer are called responses;
+- HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response. 
+- HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests.
+
+2. Cache
+A:
+- A Web cache sits between one or more Web servers (also known as origin servers) and a client or many clients, and watches requests come by, saving copies of the responses — like HTML pages, images and files (collectively known as representations) — for itself. Then, if there is another request for the same URL, it can use the response that it has, instead of asking the origin server for it again.
+- a good source: https://www.mnot.net/cache_docs/
+
+3. What are the most used HTTP APIs
+A:
+  - XMLHttpRequest (aka XHR)
+  - Fetch API
+  - Axios
+
+4. Cookies
+A:
+- an HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to a user's web browser. The browser may store the cookie and send it back to the same server with later requests. Typically, an HTTP cookie is used to tell if two requests come from the same browser—keeping a user logged in, for example. It remembers stateful information for the stateless HTTP protocol.
+- Cookies are mainly used for three purposes:
+    - Session management: Logins, shopping carts, game scores, or anything else the server should remember
+    - Personalization: User preferences, themes, and other settings
+    - Tracking: Recording and analyzing user behavior
+
+5. URI - URL - URN
+A:
+- The target of an HTTP request is called a "resource", whose nature isn't defined further; it can be a document, a photo, or anything else. Each resource is identified by a Uniform Resource Identifier (URI) used throughout HTTP for identifying resources.
+- The most common form of URI is the Uniform Resource Locator (URL), which is known as the web address.
+  EXP: https://developer.mozilla.org/en-US/search?q=URL
+- A Uniform Resource Name (URN) is a URI that identifies a resource by name in a particular namespace.
+  Exp: 
+    urn:isbn:9780141036144
+    urn:ietf:rfc:7230
+  The two URNs correspond to:
+    the book Nineteen Eighty-Four by George Orwell,
+    the IETF specification 7230, Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing.
+
+6. CORS
+A:
+
+
+7. Promise; Async-Await; Try-catch;
+A:
